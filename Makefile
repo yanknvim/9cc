@@ -1,6 +1,7 @@
-CLAKG=-std=c11 -g static
+CFLAGS=-std=c11 -g -static
 
 9cc: main.c
+	gcc -o 9cc main.c $(CFLAGS)
 
 test: 9cc
 	./test.sh
